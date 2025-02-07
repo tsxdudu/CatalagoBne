@@ -1,0 +1,102 @@
+.admin-body {
+    background-color: var(--background);
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.admin-form {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    border-radius: 4px;
+}
+
+.admin-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--text);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-btn:hover {
+    background-color: var(--accent);
+}
+
+.products-list {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.admin-product {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background);
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.admin-product img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    padding: 0.5rem 1rem;
+    background-color: #dc2626;
+    border: none;
+    color: var(--text);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-to-store {
+    position: relative;
+    top: 15px;
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        grid-template-columns: 1fr;
+    }
+}

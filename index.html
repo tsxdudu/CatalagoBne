@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xys Store</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">XYS<span>STORE</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="category-link active" data-category="all">Home</a></li>
+                    <li><a href="#produtos" class="category-link" data-category="electronics">Eletrônicos</a></li>
+                    <li><a href="#ultimos" class="category-link" data-category="phones">Celulares</a></li>
+                    <li><a href="#" class="category-link" data-category="clothes">Roupas</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrinho</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Total: R$ <span id="cart-total">0.00</span></strong>
+        </div>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Dê um toque moderno ao seu setup!</h2>
+                    <p>
+                        Encontre os melhores produtos tech com os melhores preços.
+                        Qualidade e confiança para sua experiência gaming.
+                    </p>
+                    <button>Ver Mais &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500" alt="Gaming Setup">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="black-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500" alt="Gaming Laptop">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" alt="Gaming Mouse">
+                    <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=500" alt="Gaming Keyboard">
+                </div>
+            </div>
+        </div>
+
+        >
+        <div class="page-inner-content" id="produtos">
+            <h3 class="section-title">Produtos Selecionados</h3>
+            <div class="subtitle-underline"></div>
+            <div class="products-container" id="products-grid">
+                
+            </div>
+        </div>
+
+       
+        <div class="black-background">
+            <div class="header-inner-content">
+                <div class="header-bottom-side exclusive-container">
+                    <div class="header-bottom-side-left">
+                        <h2>Oferta Exclusiva</h2>
+                        <p>
+                            Aproveite nossa oferta especial em produtos selecionados.
+                            Qualidade premium com preços imperdíveis.
+                        </p>
+                        <button>Ver Oferta &#8594;</button>
+                    </div>
+                    <div class="header-bottom-side-right">
+                        <img src="https://images.unsplash.com/photo-1625842268584-8f3296236761?w=500" alt="Exclusive Product">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="page-inner-content">
+            <h3 class="section-title">Avaliações dos Clientes</h3>
+            <div class="subtitle-underline"></div>
+            <div class="avaliacoes">
+                <div class="avaliacao">
+                    <p>"</p>
+                    <p>Excelente qualidade nos produtos e entrega super rápida!</p>
+                    <p class="rate">★★★★★</p>
+                    <p>Maria Silva</p>
+                </div>
+                <div class="avaliacao">
+                    <p>"</p>
+                    <p>Ótimo atendimento e produtos conforme descritos.</p>
+                    <p class="rate">★★★★★</p>
+                    <p>João Santos</p>
+                </div>
+                <div class="avaliacao">
+                    <p>"</p>
+                    <p>Preços justos e produtos de qualidade garantida.</p>
+                    <p class="rate">★★★★★</p>
+                    <p>Ana Oliveira</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="about">
+                <h3>Sobre Nós</h3>
+                <p>Sua loja completa em produtos tech e gaming. Qualidade e preço justo para seu setup.</p>
+            </div>
+            <div class="contact">
+                <h3>Contato</h3>
+                <p>Email: contato@XYS STORE.com</p>
+                <p>Tel: (11) 99999-9999</p>
+            </div>
+            <div class="social">
+                <h3>Redes Sociais</h3>
+                <p>Instagram | Facebook | Twitter</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 XYS STORE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
