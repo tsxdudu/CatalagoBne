@@ -1,7 +1,7 @@
-// Load products from localStorage
+// localStorage
 let products = JSON.parse(localStorage.getItem('products')) || [];
 
-// Display products in admin panel
+
 function displayAdminProducts() {
     const adminProducts = document.getElementById('admin-products');
     adminProducts.innerHTML = '';
@@ -49,5 +49,4 @@ function deleteProduct(productId) {
     displayAdminProducts();
 }
 
-// Initial load
 displayAdminProducts();
